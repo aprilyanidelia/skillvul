@@ -1,0 +1,438 @@
+:root{
+    --main-color:#FFF5E1;
+    --sect-color:#FF6969;
+    --art-color:#C80036;
+    --foot-color:#0C1844;
+}
+*{
+    font-family: "Rubik", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: rgb(255, 255, 255);
+    height: 10vh;
+    position: sticky;
+    top: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    font-size: 1.2rem;
+}
+
+nav img{
+    max-width: 100px;
+    height: auto;
+}
+
+.nav-link{
+    margin-left: 25px;
+    text-decoration: none;
+    color: gray;
+    transition:all 0.4s;
+    position: relative;
+    white-space: nowrap;
+}
+
+.nav-link:hover{
+    color: black;
+}
+
+.nav-link::after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    left: 0;
+    transition: all 0.2s;
+    pointer-events: none;
+}
+
+.nav-link:hover::after{
+    opacity: 1;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ye button{
+    padding: 10px 35px;
+    margin-top: -10%;
+    border: 0;
+    border-radius: 50px;
+    background-color: var(--art-color);
+}
+
+.ye a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: var(--main-color);
+}
+
+.ye button:active{
+    background-color: var(--sect-color);
+}
+
+.src{
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 1px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+main{
+    margin: 40px;
+    margin-top: 5px;
+    border-radius: 10px;
+    height: 90vh;
+    background-image: url(https://i.ibb.co.com/BLHt934/pengangguran.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+section{
+    background: rgb(235,232,231);
+    background: linear-gradient(90deg, var(--sect-color) 40%, rgba(254,254,254,0) 100%);
+    border-radius: 10px;
+    width: 85%;
+    height: 90vh;
+}
+
+section .nw{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 25px 50px;
+}
+
+.text h3{
+    font-size: 2.3rem;
+    letter-spacing: 2px;
+    line-height: 45px;
+}
+
+.text p{
+    margin-top: -2%;
+}
+
+.text button:active{
+    background-color: rgb(211, 211, 211);
+    color: black;
+}
+
+article{
+    min-height: 90vh;
+    margin: 40px;
+}
+
+.art{
+    padding: 40px;
+    display: flex;
+    gap: 5%;
+}
+
+.art img{
+    border-radius: 20px;
+}
+
+.art .paragraph{
+    display: flex;
+    align-items: center;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+.paragraph span:first-letter{
+    font-size: 4rem;
+}
+
+.paragraph span::first-line{
+    line-height: 20px;
+}
+
+.box {
+    margin-top: -10%;
+    padding: 30px;
+}
+
+.gtw h4{
+    font-size: 30px;
+    margin-top: -1%;
+}
+
+.gtw p{
+    font-size: 20px;
+    margin-top: -2%;
+    letter-spacing: 1px;
+    line-height: 32px;
+}
+
+.container {
+    min-height: 10vh;
+    background-color: var(--sect-color);
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.sisi {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.sisi .col {
+    flex: 1;
+}
+
+.sisi .image {
+    flex-shrink: 0;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+
+.sisi .image img {
+    max-width: 70%;
+    height: auto;
+}
+
+.sisi span{
+    display: flex;
+    align-items: center;
+    min-height: 10vh;
+    padding-left: 20px;
+    font-size: 1.2rem;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container button{
+    cursor: pointer;
+    padding: 15px 25px;
+    border: 0;
+    transition: 0.5s;
+    background-color: var(--art-color);
+}
+
+.container button:hover{
+    padding: 20px 40px;
+}
+
+.container button:active{
+    background-color: var(--sect-color);
+}
+
+.isi img{
+    width: 200%;
+}
+
+.judul{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.kartu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 20px;
+}
+
+.card {
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+    transition: 0.3s;
+    width: 100%;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+}
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+    background-color: var(--art-color);
+    color: white;
+  }
+  
+  .slice {
+    padding: 25px;
+  }
+
+.sub{
+    margin-top: -10%;
+}
+
+.layout{
+    margin-top: 1%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.kotak{
+    background-color: rgb(185, 185, 185);
+    height: 58vh;
+    width: 100%;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
+    margin-top: 10%;
+}
+
+.kotak:hover{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    background-color: var(--foot-color);
+    color: white;
+}
+
+.baru{
+    margin: 10px;
+    margin-top: -10%;
+}
+
+.kotak i{
+    font-size: 300%;
+    background-color: black;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+}
+
+footer{
+    background-color: var(--art-color);
+    min-height: 50vh;
+    width: 100%;
+    color: white;
+}
+
+.akhir img{
+    width: 30%;
+}
+
+.end{
+    padding: 20px;
+    padding-left: 80px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+}
+
+.wel{
+    padding: 40px;
+    margin-top: -4%;
+}
+
+.sosmed{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sosmed i{
+    font-size: 2.2rem;
+    margin-left: 20px;
+}
+
+.tes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tes p{
+    text-align: center;
+}
+
+.tes img{
+    width: 50%;
+    display: block;
+}
+
+.form{
+    background-color: var(--sect-color);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form form{
+    padding: 40px;
+    margin-left: 50px;
+}
+
+.form img{
+    width: 50%;
+}
+
+.form input[type="text"],[type="email"],[type="number"]{
+    width: 100%;
+    border: 1;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    padding: 10px;
+    border-radius: 3px;
+    border: 0;
+    outline: none;
+}
+
+.form input:focus{
+    background-color: #BBE2EC;
+    outline: 2px solid #40A2E3;
+}
+
+.form button{
+    padding: 12px 17px;
+    margin-top: 2%;
+    background-color: black;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.form button:hover{
+    background-color: white;
+    color: black;
+    transition: 0.4s;
+}
+
+.form button:active{
+    background-color: rgb(194, 194, 194);
+}
+
+#warning{
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.akhir a{
+    text-decoration: none;
+    color: white;
+}
