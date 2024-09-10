@@ -17,6 +17,8 @@ body{
     padding: 0;
 }
 
+
+
 header{
     background-color: rgb(255, 255, 255);
     z-index: 99;    
@@ -155,12 +157,10 @@ section .nw{
 }
 
 article{
-    min-height: 90vh;
     margin: 20px;
 }
 
 .art{
-    padding: 40px;
     display: flex;
     gap: 5%;
 }
@@ -455,6 +455,34 @@ footer{
     display: none;
 }
 
+@media screen and (max-width: 1175px) {
+
+    .art{
+        display: flex;
+        gap: 15px;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+    
+
+   
+
+    .art img{
+        width: 100%;
+    }
+
+    .art .paragraph{
+        line-height: 18px;
+        letter-spacing: 1px;
+        font-size: 0.8rem;
+        text-align: justify;
+    }
+}
+
+
+
+
 @media screen and (max-width: 650px) {
 
     .hidden {
@@ -465,12 +493,18 @@ footer{
     .navbar {
         flex-direction: column;
         gap: 20px;
+        grid-column: 1/3;
     }
 
+    .nav-link{
+        margin-left: 0px;
+    }
+    
     .nav-container {
         text-align: center;
         flex-direction: column;
         padding: 0;
+        gap: 14px;
     }
 
     .ye button {
@@ -525,30 +559,9 @@ footer{
         font-size: 0.9rem;
     }
 
-    .art{
-        padding: 10px;
-        display: flex;
-        gap: 5%;
-    }
     
 
-    article .art{
-        display: grid;
-        grid-template-columns: 100%;
-        gap: 15px;
-        grid-template-rows: 50% 50%;
-    }
-
-    .art img{
-        width: 100%;
-    }
-
-    .art .paragraph{
-        line-height: 18px;
-        letter-spacing: 1px;
-        font-size: 0.8rem;
-        text-align: justify;
-    }
+   
 
     .tes{
         width: 100%;

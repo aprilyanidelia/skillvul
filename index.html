@@ -14,7 +14,7 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body>
+<body style="max-width: 1280px; margin: auto;">
   <header class="header-nav">
     <nav style="font-size: 1rem;">
       <a href="https://skilvul.com" id="link"><img src="https://i.ibb.co.com/yXQgqgm/logo.png" alt="" /></a>
@@ -407,6 +407,13 @@
     function togglenav() {
       document.querySelector('header').classList.toggle('header-nav');
     }
+
+    window.addEventListener('resize', () => {
+      let widthwindow = window.innerWidth;
+      if(widthwindow > 650) {
+        document.querySelector('header').classList.add('header-nav');
+      }
+    });
   </script>
 </body>
 
